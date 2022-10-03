@@ -1,3 +1,7 @@
+html {
+    background-color: rgb(24, 61, 67);
+}
+
 body {
     background-color: rgb(24, 61, 67);
     color: rgb(222, 221, 221);
@@ -167,7 +171,7 @@ part1.5
     min-height: 70vh;
     display: grid;
     place-items: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .newcard {
