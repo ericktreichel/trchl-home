@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Importing fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Cairo+Play:wght@500;700&family=Cinzel:wght@500;700&family=Comfortaa:wght@400;600&family=Fauna+One&family=Fira+Sans+Condensed&family=IBM+Plex+Serif:wght@300;400;600&family=M+PLUS+Rounded+1c:wght@400;700&family=Merriweather+Sans:wght@500&family=Mitr&family=Monda:wght@400;700&family=Nabla&family=Noto+Sans+JP:wght@500&family=Noto+Sans+Mono&family=Open+Sans:wght@400;600&family=Quattrocento&family=Quattrocento+Sans&family=Roboto+Condensed&family=Roboto:wght@400;700&family=Satisfy&family=Source+Code+Pro:wght@400;600&family=Tinos&family=Viga&display=swap" rel="stylesheet">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAABFqAMAZ2NeAD6SDgBpcJQAr8X4ABBd/wCxsLAAboWsADNuIAD///8A4fDYAKqpqQB3dHAAGL//AEarAQA2dhwA0NLdAP3+/wA0cR4A9/r/AHeStwAsViwAd9j/AApb/wDm5eUAPY8PAHCW/wBOV4QAfZe6ACFLJgA8ihIAMi4tAPHx9QBTXIcARKQFAD2OEADn6fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQkJCQkJCQkFCQkJCQkJCQkJCQkJBRcJBRoJCQkJCQkJCQkJCQQFEwkJCQkJCQkJCQkJCQkJCREkCQkJCQkJCQkJCQkQGxsbGxsbGwkJCQkJCQkJGxsbGxQUGxshCwkJCQkJGxsbGxQUFBQHGwwJCQkJCRsbGxQUFBQUFBsGCQkJCQkDGxsbFBQUFBQbBhgJCQkJCQkJCRwUFBQUIAEJCQkJCQkJFRUdCQkJCQkJCQkJCQkJCQ8SCAkJCQkJCQkJCRYNDQIZIx4JCQkJCQkJCQkJCQ0AHyIiCQkJCQkJCQkJCQkJDg4ODgkJCQkJCQkJCQkJCQkJCgkJCQkJCQkJCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+    <!-- General HTML5 stuff -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="static/script.js"></script>
+    <link href="static/styles.css" rel="stylesheet">
+    <title>tchrl</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-braces-asterisk" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C2.25 2 1.49 2.759 1.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6ZM14.886 7.9v.164c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456v-1.3c-1.114 0-1.49-.362-1.49-1.456V4.352C14.51 2.759 13.75 2 12.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6ZM7.5 11.5V9.207l-1.621 1.621-.707-.707L6.792 8.5H4.5v-1h2.293L5.172 5.879l.707-.707L7.5 6.792V4.5h1v2.293l1.621-1.621.707.707L9.208 7.5H11.5v1H9.207l1.621 1.621-.707.707L8.5 9.208V11.5h-1Z" />
+                </svg>
+                <a class="navbar-brand" href="index.html">trchl</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link now" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" title="so far..." href="aboutme.html">About me</a>
+                        <a class="nav-link" href="hobbies.html">Hobbies</a>
+                        <a class="nav-link" href="mygoal.html">My goal</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="container">
+
+        <header class="header-wrapper">
+            <p align="justify"> &emsp; &emsp;Hello there, I created this website as an assignment for Harvard's CS50 course that I'm following in these last months. Week 8 follows web development using HTML, CSS and (the basics of) JavaScript.&emsp;</p>
+            <p align="left">&emsp;&emsp; You all are welcome to browse through here, I'm sure it won't take too long :)</p><br>
+            <p><small class="btw"> by the way: sorry about the color palette, design isn't my strong suit.</small></p><br>
+
+
+            <div><img src="https://i.ibb.co/YDBvC4k/3x4-Copy.jpg" alt="ericktreichel" class="img-fluid photo" border="0"></div>
+            <h1 class="abmh1">Erick Treichel</h1>
+            <div class="social">
+                <a href="https://linkedin.cogitm/in/ericktreichel/" target="_blank" class="links">Linkedin</a>
+                <a href="https://github.com/ericktreichel" target="_blank" class="links">Github</a>
+            </div>
+        </header>
+
+
+
+        <div id="fb-all" class="feed">
+            <div id="fb-title" class="answer">
+                <p class="ttl mt-4 mb-0">Give us your feedback!</p>
+            </div>
+            <form id="feedback">
+                <div class="options">
+                    <input type="radio" name="smiley" class="sad" value="sad">
+                    <input type="radio" name="smiley" class="neutral" value="neutral" checked="checked">
+                    <input type="radio" name="smiley" class="happy" value="happy">
+                </div>
+
+                <div class="answer">
+                    <p class="ans"> Looks like you're feeling <span id="result">neutral</span> about what you saw here.</p>
+                    <p class="ans"><span id="result2"></span></p>
+                </div>
+            </form>
+        </div>
+
+
+        <br><br>
+        <main class="container">
+            <div class="card-container">
+                <div class="card-text">
+                    <p align="justify">
+                        Ullamcorper sit amet risus nullam eget felis eget. Egestas erat imperdiet sed euismod. Non diam phasellus vestibulum lorem sed risus ultricies. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Purus non enim praesent elementum. Pretium lectus quam id leo in vitae turpis massa. Mattis rhoncus urna neque viverra justo. Porttitor leo a diam sollicitudin. Quam quisque id diam vel. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis.
+
+                        Elementum sagittis vitae et leo duis ut diam quam nulla. Maecenas sed enim ut sem viverra aliquet. Rhoncus urna neque viverra justo nec ultrices dui sapien. Justo nec ultrices dui sapien eget mi. Neque laoreet suspendisse interdum consectetur libero. Scelerisque eu ultrices vitae auctor. Arcu dictum varius duis at consectetur lorem donec massa. Id donec ultrices tincidunt arcu non sodales neque.</p>
+                </div><br>
+                <div class="card">
+                    <div class="card-wrapper">
+                        <h2>Github</h2>
+                        <p>Veja meu portifólio</p>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-wrapper">
+                        <h2>Linkedin</h2>
+                        <p>Siga meu perfil profissional</p>
+                    </div>
+                </div><br>
+                <div class="card-text">
+                    <p align="justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet est placerat in egestas. In aliquam sem fringilla ut morbi tincidunt augue. Pretium lectus quam id leo in vitae turpis massa. Mattis rhoncus urna neque viverra justo. Porttitor leo a diam sollicitudin. Quam quisque id diam vel. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis.
+
+                        Elementum sagittis vitae et leo duis ut diam quam nulla. Maecenas sed enim ut sem viverra aliquet. Rhoncus urna neque viverra justo nec ultrices dui sapien. Justo nec ultrices dui sapien eget mi. Scelerisque eu ultrices vitae auctor.</p>
+                </div>
+
+            </div>
+
+        </main><br><br>
+    </section>
+    <div class="footer">does my website need a footer? Nope, but here he is. &copy; 2022 trchl. </div>
+</body>
+
+
+
+</html>
